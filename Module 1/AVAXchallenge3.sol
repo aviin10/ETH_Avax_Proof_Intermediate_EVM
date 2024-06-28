@@ -17,7 +17,7 @@ contract Counter {
 
     // Decrement the counter and emit an event
     function decrease() public {
-        require(count > 0, "Counter: cannot decrement below zero");
+        require(count > 0, "Counter: cannot decrease below zero");
         count -= 1;
         emit Decrease(msg.sender, count);
     }
